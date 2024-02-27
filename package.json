@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "product": "npx ts-node build/index.js",
+    "start": "nodemon src/index.ts",
     "dev": "npx nodemon src/index.ts",
     "build": "npx tsc --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true",
     "test": "echo \"Error: no test specified\" && exit 1"

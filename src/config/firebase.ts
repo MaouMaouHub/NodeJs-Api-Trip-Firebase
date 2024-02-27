@@ -9,7 +9,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: process.env.apiKey,
   projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
+  storageBucket: "maouhub-animemash.appspot.com",
   messagingSenderId: process.env.messagingSenderId,
   measurementId: process.env.measurementId,
 };
