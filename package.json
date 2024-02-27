@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "product": "npx ts-node build/index.js",
+    "dev": "npx nodemon src/index.ts",
+    "build": "npx tsc --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.57.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/multer": "^1.4.11",
     "@types/mysql": "^2.15.25",
@@ -27,6 +32,7 @@
     "buffer-from": "^1.1.2",
     "chokidar": "^3.6.0",
     "concat-map": "^0.0.1",
+    "cors": "^2.8.5",
     "create-require": "^1.1.1",
     "diff": "^4.0.2",
     "dynamic-dedupe": "^0.3.0",
@@ -74,5 +80,7 @@
     "xtend": "^4.0.2",
     "yn": "^3.1.1"
   },
-  "description": ""
+  "description": "",
+  "eslint": "eslint ./",
+  "eslint-fix": "eslint ./ --fix"
 }

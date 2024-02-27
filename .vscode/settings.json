@@ -8,5 +8,7 @@
     "firebaseapp",
     "maouhub",
     "tripbooking"
-  ]
+  ],
+  "search.useGlobalIgnoreFiles": false,
+  "search.useParentIgnoreFiles": false
 }
